@@ -1,0 +1,149 @@
+/* .home--max--container{
+  position: relative;
+}
+
+.page--header{
+  font-family: 'Alfa Slab One', serif;
+  color: rgb(255, 255, 255, 0.5);
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  bottom: 50%;
+  left: 32%;
+  transform: rotate(270deg);
+  font-size: 90px;
+  font-weight: 700;
+  z-index: -30;
+  letter-spacing: 40px;
+} */
+
+
+.home--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 100vh;
+  margin-top: -10px;
+  padding: 20px;
+}
+
+.home--text--container {
+  display: grid;
+  place-items: center;
+  /* background-color: red; */
+  height: fit-content;
+}
+
+.top--home--text {
+  font-size: 35px;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.top--home--text .colored {
+  font-family: "Anton", sans-serif;
+  letter-spacing: 0.1cm;
+  font-weight: 600;
+  animation: animate-webkitstrokes 4s infinite alternate;
+}
+
+.top--home--text .colored-2 {
+  color: rgb(238, 17, 194,0.5);
+  animation: 4s infinite alternate font-animate;
+  transition-property: font-size;
+  transition-duration: 400ms;
+}
+
+@keyframes animate-webkitstrokes {
+  0% {
+    fill: transparent;
+    stroke: rgb(219, 7, 219);
+    stroke-width: 2px;
+    stroke-dashoffset: 100%;
+    stroke-dasharray: 0 100%;
+  }
+  100% {
+    fill: rgb(238, 17, 194,0.5);
+    stroke: transparent;
+    stroke-width: 0;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 100% 0;
+  }
+}
+
+@keyframes font-animate {
+  0% {
+    opacity: 0.7;
+  }
+  50%,
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+.middle--home--text {
+  font-size: 28px;
+  color: white;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+}
+
+.middle--home--text span {
+  transition: color 400ms ease-in-out;
+}
+
+.middle--home--text:hover span {
+  color: rgb(121, 6, 121);
+}
+
+.bottom--home--text {
+  font-size: 20px;
+  margin-top: 10px;
+  color: rgb(238, 17, 194,0.5);
+  font-weight: 400;
+  display: block;
+  text-align: center;
+  font-family: "Lilita One", sans-serif;
+}
+
+.rocket-icon {
+    display: block;
+    margin-top: 78px;
+    font-size: 24px; 
+    animation: takeoff 3s ease-in-out infinite alternate;
+    transition: transform 0.3s ease-in-out; 
+    color: white;
+
+  }
+  
+  @keyframes takeoff {
+    0%, 100% {
+      transform: translateY(0) translateX(0) scale(1);
+    }
+    10% {
+      transform: translateY(-20px) translateX(20px) scale(1.6);
+    }
+    30% {
+      transform: translateY(-40px) translateX(40px) scale(2.2);
+    }
+    50% {
+      transform: translateY(-60px) translateX(60px) scale(2.8);
+    }
+    70% {
+      transform: translateY(-40px) translateX(40px) scale(2.2);
+    }
+    90% {
+      transform: translateY(-20px) translateX(20px) scale(1.6);
+    }
+    100% {
+      transform: translateY(0) translateX(0) scale(1);
+    }
+  }

@@ -1,0 +1,139 @@
+
+.About--container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.others-card,
+.bg-card,
+.skills-card {
+  padding: 10px 15px;
+  border: 2px solid rgb(219, 7, 219, 0.1);
+  transition: border 600ms ease-in-out;
+}
+
+.others-card:hover,
+.bg-card:hover,
+.skills-card:hover {
+  border: 2px solid rgb(219, 7, 219);
+  animation: border-animate 600ms infinite alternate;
+}
+/******* OTHERS ********/
+.others-card {
+  width: 60vw;
+  height: 30vh;
+  margin: 0 auto;
+  background: rgba(225, 84, 225, 0.4);
+  backdrop-filter: 8px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-weight: 500;
+  color: rgb(255, 255, 255, 0.7);
+  transition: color 0.2s ease-in-out;
+}
+
+.others-card:hover {
+  color: white;
+}
+
+.others--left--side {
+  border-right: 4px solid rgb(219, 7, 219, 0.3);
+  padding: 10px;
+  margin-top: -8px;
+}
+.others--heading {
+  position: relative;
+}
+.others--left--side h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.2s;
+}
+
+.others--left--side h3:hover::after {
+  width: 100%;
+}
+
+/******* SKILLS ********/
+.skills-card {
+  width: 35vw;
+  height: 50vh;
+  background: rgb(128, 0, 128, 0.4);
+  backdrop-filter: 8px;
+  border-radius: 10px;
+  font-weight: 500;
+  color: rgb(255, 255, 255, 0.7);
+  transition: color 0.2s ease-in-out;
+}
+
+.skills-card:hover {
+  color: white;
+}
+
+.heading--skills {
+  position: relative;
+}
+.heading--skills::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.2s;
+}
+
+.heading--skills:hover::after {
+  width: 100%;
+}
+
+.skills--max--container {
+}
+
+.skills--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/******** BG **********/
+.bg-card {
+  width: 35vw;
+  height: 50vh;
+  background: rgb(128, 0, 128, 0.4);
+  backdrop-filter: 8px;
+  border-radius: 10px;
+  font-weight: 500;
+  color: rgb(255, 255, 255, 0.7);
+  display: grid;
+  place-items: center;
+  transition: color 0.2s ease-in-out;
+}
+.bg-card:hover {
+  color: white;
+}
+.bg-card span {
+  display: block;
+  margin-top: 8px;
+}
+
+@keyframes border-animate {
+  0% {
+    filter: brightness(20deg);
+  }
+  50%,
+  80% {
+    filter: hue-rotate(30deg);
+  }
+  100% {
+    filter: brightness(20deg);
+  }
+}

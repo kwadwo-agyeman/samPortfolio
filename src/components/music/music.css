@@ -1,0 +1,11 @@
+.music--container{
+    background: none;
+    position: relative;
+    z-index: 255;
+}
+
+.music-paused-icon img{
+    width: 80px;
+    margin-bottom: -30px;
+    cursor: pointer;
+}

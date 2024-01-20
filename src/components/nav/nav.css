@@ -1,0 +1,104 @@
+.nav--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+  }
+  
+  .nav-bigger-circle {
+    position: relative;
+    z-index: 255;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(52, 152, 219, 0.4);
+    border: 10px solid #b3b3f1;
+    animation: navMenu 3s infinite; 
+    transition: transform 0.3s ease-in-out; 
+
+  }
+
+  .nav-bigger-circle:hover {
+    animation-play-state: paused; 
+    cursor: pointer;
+  }
+  
+  
+  @keyframes navMenu {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.8);
+    }
+  }
+  
+  .nav-center-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #5555d8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 222;
+  }
+  
+  .home,
+  .about,
+  .portfolio,
+  .contact {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 3px;
+  }
+  
+  .home {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .home:hover{
+    color: rgb(228, 16, 172)
+  }
+  
+  .about {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  .about:hover{
+    color: rgb(227, 101, 5)
+  }
+
+  
+  .portfolio {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  .portfolio:hover{
+    color: green
+  }
+
+  
+  .contact {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .contact:hover{
+    color: red
+  }
+
+  
