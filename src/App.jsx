@@ -10,7 +10,7 @@ import Contact from "./Contact";
 import Portfolio from "./Portfolio/Portfolio";
 
 const App = () => {
-  const [activePage, setActivePa] = useState("Home");
+  const [activePage, setActivePage] = useState("Home");
   const [cursorPosition, setCursorPosition] = useState({ x: "50%", y: "50%" });
   const [isMoving, setIsMoving] = useState(false);
 
