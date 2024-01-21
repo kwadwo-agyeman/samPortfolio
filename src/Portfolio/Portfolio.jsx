@@ -24,17 +24,13 @@ const Portfolio = () => {
       allowfullscreen
     ></iframe>,
   ];
-  const [videoIndex,setVideoIndex] = useState(0)
-  const handleTabClick = (Index) => {
-    setVideoTabClicked((prev) => !prev);
-
-    // setVideoTabClicked((prev) => {
-    //   const updateArr = [...prev];
-    //   updateArr[Index] = !updateArr[Index];
-    //   return updateArr
-    //  });
- 
+  const [videoIndex, setVideoIndex] = useState(0);
+  const handleViewDetails = (Index) => {
     setVideoIndex(Index);
+    setVideoTabClicked(true)
+  };
+  const handleTabClick = () => {
+    setVideoTabClicked((prev) => !prev);
   };
 
   return (
@@ -42,7 +38,7 @@ const Portfolio = () => {
       {/* <div className="portfolio--header"> PORTFOLIO </div> */}
       <div className="portfolio--container">
         <div className="main--content">
-          <ProjectsCard openTab={handleTabClick} />
+          <ProjectsCard openTab={handleViewDetails} />
         </div>
         <div
           className="video--tab"
@@ -69,9 +65,7 @@ const Portfolio = () => {
             }}
           >
             <div className="video--board--content">
-              <div className="visuals">
-                {videoDetailsArr[videoIndex]}
-              </div>
+              <div className="visuals">{videoDetailsArr[videoIndex]}</div>
             </div>
           </div>
         </div>
