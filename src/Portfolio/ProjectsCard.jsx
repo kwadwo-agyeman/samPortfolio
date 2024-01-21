@@ -1,5 +1,6 @@
 import React from "react";
 import collegeBudImg from "../assets/collegeBudImg.png";
+import UrbanCart from "../assets/UrbanCart.png"
 import FwdArrow from "@mui/icons-material/ArrowForward";
 import { Box } from "@mui/material";
 
@@ -17,7 +18,7 @@ const ProjectsCard = (props) => {
                 />
               </div>
             </div>
-            <Box className="view--details" onClick={props.openTab}>
+            <Box className="view--details" onClick={()=>props.openTab(cardIndex)} >
               <h4
                 style={{
                   display: "flex",
@@ -56,8 +57,8 @@ const ProjectsCardArr = [
     lang: " JS HTML CSS REACT MUI NODE.JS MONGO-DB EXPRESS.JS",
   },
   {
-    img: collegeBudImg,
-    title: "College Buddy",
-    lang: " JS HTML CSS REACT MUI NODE.JS MONGO-DB EXPRESS.JS",
+    img: UrbanCart,
+    title: "Urban Cart",
+    lang: " JS HTML CSS REACT MUI ",
   },
 ];

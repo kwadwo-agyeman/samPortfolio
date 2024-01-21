@@ -4,15 +4,45 @@ import ProjectsCard from "./ProjectsCard";
 import ArrowBack from "@mui/icons-material/ArrowBackIos";
 const Portfolio = () => {
   const [videoTabClicked, setVideoTabClicked] = useState(false);
-  const handleTabClick = () => {
+  const videoDetailsArr = [
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/jmn4EAV0RZA?si=oJ94x2TPhqXZqCyp"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>,
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/ZNjoTQBuFOw?si=9mR9t1_m7x0cio0M"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>,
+  ];
+  const [videoIndex,setVideoIndex] = useState(0)
+  const handleTabClick = (Index) => {
     setVideoTabClicked((prev) => !prev);
+
+    // setVideoTabClicked((prev) => {
+    //   const updateArr = [...prev];
+    //   updateArr[Index] = !updateArr[Index];
+    //   return updateArr
+    //  });
+ 
+    setVideoIndex(Index);
   };
+
   return (
     <div className="portfolio--max--container">
       {/* <div className="portfolio--header"> PORTFOLIO </div> */}
       <div className="portfolio--container">
         <div className="main--content">
-          <ProjectsCard openTab={handleTabClick}/>
+          <ProjectsCard openTab={handleTabClick} />
         </div>
         <div
           className="video--tab"
@@ -40,18 +70,7 @@ const Portfolio = () => {
           >
             <div className="video--board--content">
               <div className="visuals">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/jmn4EAV0RZA?si=oJ94x2TPhqXZqCyp"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
-                {/* <video controls>
-                  <source src={CollegeBud}/>
-                </video> */}
+                {videoDetailsArr[videoIndex]}
               </div>
             </div>
           </div>
