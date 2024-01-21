@@ -2,10 +2,23 @@ import { Box, Card } from "@mui/material";
 import React from "react";
 import "./About.css";
 
+const bgAndSkillsStyles = {
+  width: {xs:"70vw",sm:"35vw"},
+  height: "fit-content",
+  background: "rgb(128, 0, 128, 0.4)",
+  backdropFilter:" 8px",
+  borderRadius: "10px",
+  fontWeight:" 500",
+  color: "rgb(255, 255, 255, 0.7)",
+  transition: "color 0.2s ease-in-out",
+
+}
+
+
 const Skills = () => {
   return (
     <div>
-      <Box className="skills-card ">
+      <Box sx={bgAndSkillsStyles} className="skills-card ">
         <div className="heading--skills">
           <h3>Skills</h3>
           <div className="underline"></div>

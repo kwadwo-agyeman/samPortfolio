@@ -5,6 +5,7 @@ import Others from "./Others";
 import { Box } from "@mui/material";
 import "./About.css";
 
+
 const About = () => {
   return (
     <div className="About--max--container">
@@ -15,7 +16,7 @@ const About = () => {
         <Box
           sx={{
             display: "grid",
-            gridTemplateColumns: "1fr 1fr",
+            gridTemplateColumns:{xs:"1fr" , sm: "1fr 1fr"},
             gap: "2rem",
             margin: "0 auto",
           }}
