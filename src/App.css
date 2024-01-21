@@ -1,8 +1,8 @@
 
 .portfolio-Bg {
-  width: 100vw;
-  height: 100vh;
-  overflow: auto;
+  width: auto;
+  height: auto;
+  overflow: hidden;
   position: relative;
   /* pointer-events: none; */
 }
