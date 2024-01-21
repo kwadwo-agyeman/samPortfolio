@@ -2,7 +2,7 @@
 .portfolio-Bg {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow: auto;
   position: relative;
   /* pointer-events: none; */
 }

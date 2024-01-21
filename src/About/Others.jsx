@@ -16,7 +16,7 @@ const otherStyles = {
   transition: "color 0.2s ease-in-out",
 };
 
-const windowWidth = window.innerWidth > 400 && window.innerWidth < 600;
+const windowWidth = window.innerWidth >= 600;
 const Others = () => {
   return (
     <div>
