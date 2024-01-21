@@ -8,6 +8,14 @@ import Home from "./Home";
 import About from "./About/About";
 import Contact from "./Contact";
 import Portfolio from "./Portfolio/Portfolio";
+import { Box } from "@mui/material";
+
+const PortfolioBgStyles = {
+  width: " 100vw",
+  height: {xs: "auto",  sm: "100vh"},
+  overflow: "hidden",
+  position: "relative",
+};
 
 const App = () => {
   const [activePage, setActivePage] = useState("Home");
@@ -32,7 +40,7 @@ const App = () => {
   }, [cursorPosition]);
 
   return (
-    <div className="portfolio-Bg" onMouseMove={moveCursor}>
+    <Box sx={PortfolioBgStyles} className="portfolio-Bg" onMouseMove={moveCursor}>
       <video autoPlay muted loop>
         <source src={PortfolioBg} type="video/mp4" />
         <img src={backgroundImg} alt="" />
@@ -40,7 +48,7 @@ const App = () => {
       <div className="overlay"></div>
 
       <div
-        className={`cursor--container ${isMoving ? 'moving' : ''}`}
+        className={`cursor--container ${isMoving ? "moving" : ""}`}
         style={{ top: `${cursorPosition.y}px`, left: `${cursorPosition.x}px` }}
       >
         <div className="cursor"></div>
@@ -61,7 +69,7 @@ const App = () => {
         {activePage === "Portfolio" && <Portfolio />}
         {activePage === "Contact" && <Contact />}
       </div>
-    </div>
+    </Box>
   );
 };
 
