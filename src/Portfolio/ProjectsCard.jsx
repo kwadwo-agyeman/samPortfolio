@@ -3,7 +3,7 @@ import collegeBudImg from "../assets/collegeBudImg.png";
 import UrbanCart from "../assets/UrbanCart.png";
 import FwdArrow from "@mui/icons-material/ArrowForward";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { Box } from "@mui/material";
+import { Box, Tooltip } from "@mui/material";
 
 const ProjectsCard = (props) => {
   return (
@@ -45,8 +45,10 @@ const ProjectsCard = (props) => {
               Languages/Tools:
               <span>{cardDetails.lang}</span>
             </p>
-            <p style={{cursor:"pointer"}}>
-              <GitHubIcon />
+            <p style={{ cursor: "pointer" }}>
+              <Tooltip title="Github Repo">
+                <GitHubIcon />
+              </Tooltip>
             </p>
           </div>
         </div>
