@@ -1,7 +1,8 @@
 import React from "react";
 import collegeBudImg from "../assets/collegeBudImg.png";
-import UrbanCart from "../assets/UrbanCart.png"
+import UrbanCart from "../assets/UrbanCart.png";
 import FwdArrow from "@mui/icons-material/ArrowForward";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import { Box } from "@mui/material";
 
 const ProjectsCard = (props) => {
@@ -18,7 +19,10 @@ const ProjectsCard = (props) => {
                 />
               </div>
             </div>
-            <Box className="view--details" onClick={()=>props.openTab(cardIndex)} >
+            <Box
+              className="view--details"
+              onClick={() => props.openTab(cardIndex)}
+            >
               <h4
                 style={{
                   display: "flex",
@@ -40,6 +44,9 @@ const ProjectsCard = (props) => {
             <p>
               Languages/Tools:
               <span>{cardDetails.lang}</span>
+            </p>
+            <p style={{cursor:"pointer"}}>
+              <GitHubIcon />
             </p>
           </div>
         </div>
