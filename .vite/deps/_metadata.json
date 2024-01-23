@@ -1,0 +1,94 @@
+{
+  "hash": "7c8bd404",
+  "configHash": "3d4e9f10",
+  "lockfileHash": "7f6ab389",
+  "browserHash": "035b0248",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "17d9298c",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "a77aa467",
+      "needsInterop": true
+    },
+    "@mui/material": {
+      "src": "../../node_modules/@mui/material/index.js",
+      "file": "@mui_material.js",
+      "fileHash": "3ee8965d",
+      "needsInterop": false
+    },
+    "@mui/icons-material/AccountCircleOutlined": {
+      "src": "../../node_modules/@mui/icons-material/AccountCircleOutlined.js",
+      "file": "@mui_icons-material_AccountCircleOutlined.js",
+      "fileHash": "c2530cd6",
+      "needsInterop": true
+    },
+    "@mui/icons-material/HomeOutlined": {
+      "src": "../../node_modules/@mui/icons-material/HomeOutlined.js",
+      "file": "@mui_icons-material_HomeOutlined.js",
+      "fileHash": "4297428b",
+      "needsInterop": true
+    },
+    "@mui/icons-material/AlbumOutlined": {
+      "src": "../../node_modules/@mui/icons-material/AlbumOutlined.js",
+      "file": "@mui_icons-material_AlbumOutlined.js",
+      "fileHash": "f2e28e4c",
+      "needsInterop": true
+    },
+    "@mui/icons-material/ContactPhoneOutlined": {
+      "src": "../../node_modules/@mui/icons-material/ContactPhoneOutlined.js",
+      "file": "@mui_icons-material_ContactPhoneOutlined.js",
+      "fileHash": "8aefbfd3",
+      "needsInterop": true
+    },
+    "@mui/icons-material/ArrowBackIos": {
+      "src": "../../node_modules/@mui/icons-material/ArrowBackIos.js",
+      "file": "@mui_icons-material_ArrowBackIos.js",
+      "fileHash": "67bcaf96",
+      "needsInterop": true
+    },
+    "@mui/icons-material/Pause": {
+      "src": "../../node_modules/@mui/icons-material/Pause.js",
+      "file": "@mui_icons-material_Pause.js",
+      "fileHash": "8aec20aa",
+      "needsInterop": true
+    },
+    "@mui/icons-material/PlayArrow": {
+      "src": "../../node_modules/@mui/icons-material/PlayArrow.js",
+      "file": "@mui_icons-material_PlayArrow.js",
+      "fileHash": "ecd977ec",
+      "needsInterop": true
+    },
+    "@mui/icons-material/ArrowForward": {
+      "src": "../../node_modules/@mui/icons-material/ArrowForward.js",
+      "file": "@mui_icons-material_ArrowForward.js",
+      "fileHash": "537166fe",
+      "needsInterop": true
+    },
+    "@mui/icons-material/GitHub": {
+      "src": "../../node_modules/@mui/icons-material/GitHub.js",
+      "file": "@mui_icons-material_GitHub.js",
+      "fileHash": "302699b5",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-KJUJBIHA": {
+      "file": "chunk-KJUJBIHA.js"
+    },
+    "chunk-JUJI2GMD": {
+      "file": "chunk-JUJI2GMD.js"
+    },
+    "chunk-7YYD5CX4": {
+      "file": "chunk-7YYD5CX4.js"
+    },
+    "chunk-W4VDMLRG": {
+      "file": "chunk-W4VDMLRG.js"
+    }
+  }
+}
