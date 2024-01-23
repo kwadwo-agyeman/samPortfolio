@@ -124,7 +124,7 @@
   padding: 10px;
   background-color: rgb(218, 68, 218, 0.8);
   width: 50vw;
-  height: 40vh;
+  height: auto;
   margin: 20px 20px;
   border: 2px solid rgb(255, 255, 255, 0.9);
   border-radius: 10px;
