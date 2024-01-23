@@ -4,6 +4,7 @@ import UrbanCart from "../assets/UrbanCart.png";
 import FwdArrow from "@mui/icons-material/ArrowForward";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { Box, Tooltip } from "@mui/material";
+import "./portfolio.css";
 
 const ProjectsCard = (props) => {
   return (
