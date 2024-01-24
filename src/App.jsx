@@ -67,7 +67,7 @@ const App = () => {
         {activePage === "Home" && <Home />}
         {activePage === "About" && <About />}
         {activePage === "Portfolio" && <Portfolio />}
-        
+
         {/* {activePage === "Contact" && <Contact />} */}
       </div>
     </Box>

@@ -10,7 +10,15 @@ const ProjectsCard = (props) => {
   return (
     <>
       {ProjectsCardArr.map((cardDetails, cardIndex) => (
-        <div key={cardIndex} className="project--cards">
+        <Box
+          sx={{
+            display: "grid",
+            gridTemplateColumns: { xs: "1fr", sm: "38% 55%" },
+            width: { xs: "70vw", sm: "50vw" },
+          }}
+          key={cardIndex}
+          className="project--cards"
+        >
           <div className="left">
             <div className="project--image">
               <div className="image">
@@ -52,7 +60,7 @@ const ProjectsCard = (props) => {
               </Tooltip>
             </p>
           </div>
-        </div>
+        </Box>
       ))}
     </>
   );

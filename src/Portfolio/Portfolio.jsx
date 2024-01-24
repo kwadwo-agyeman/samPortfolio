@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./portfolio.css";
 import ProjectsCard from "./ProjectsCard";
 import ArrowBack from "@mui/icons-material/ArrowBackIos";
+import { Box, styled } from "@mui/material";
 const Portfolio = () => {
   const [videoTabClicked, setVideoTabClicked] = useState(false);
   const [videoIndex, setVideoIndex] = useState(0);
@@ -13,9 +14,9 @@ const Portfolio = () => {
           height="315"
           src="https://www.youtube.com/embed/jmn4EAV0RZA?si=oJ94x2TPhqXZqCyp"
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       ),
       title: "College Buddy",
@@ -29,9 +30,9 @@ const Portfolio = () => {
           height="315"
           src="https://www.youtube.com/embed/ZNjoTQBuFOw?si=9mR9t1_m7x0cio0M"
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       ),
       title: "Urban Cart",
@@ -48,6 +49,27 @@ const Portfolio = () => {
     setVideoTabClicked((prev) => !prev);
   };
 
+  // const TabsBox = styled(Box)(({theme})=>({
+  //   position: "absolute",
+  //   top: "50%",
+  //   transform: "translateY(-50%)",
+  //   right: 0,
+  //   zIndex: 227,
+  //   height: "87%",
+  //   width: "3vw",
+  //   backgroundColor: "rgb(138, 43, 226, 0.5)",
+  //   borderTopLeftRadius: "10px",
+  //   borderBottomLeftRadius: "10px",
+  //   padding: "4px 10px",
+  //   display: "flex",
+  //   gridTemplateRows: "30% 70%",
+  //   gap: "1rem",
+  //   transition: "width 500ms ease-in-out",
+  //   border: "2px solid rgb(255, 255, 255, 0.9)",
+  //   paddingBottom: "12px",
+
+  // }))
+
   return (
     <div className="portfolio--max--container">
       {/* <div className="portfolio--header"> PORTFOLIO </div> */}
@@ -55,12 +77,18 @@ const Portfolio = () => {
         <div className="main--content">
           <ProjectsCard openTab={handleViewDetails} />
         </div>
-        <div
-          className="video--tab"
-          style={{ width: videoTabClicked ? "60vw" : "3vw" }}
+        <Box
+          className={`video--tab ${videoTabClicked ? "expand" : "collapse"}`}
+          // sx={{ width: videoTabClicked ? "60vw" : "3vw" }}
         >
+          <div
+            className={`close--btn ${videoTabClicked ? "visible" : "hidden"}`}
+            onClick={handleTabClick}
+          >
+            {videoTabClicked ? "close" : "open"}
+          </div>
           {/** TAB **/}
-          <div className="tab--container">
+          <Box className="tab--container">
             <div className="tab" onClick={handleTabClick}>
               <ArrowBack
                 className="tab--arrow"
@@ -70,7 +98,7 @@ const Portfolio = () => {
                 }}
               />
             </div>
-          </div>
+          </Box>
           {/*** VIDEO */}
           <div
             className="video--board"
@@ -82,12 +110,16 @@ const Portfolio = () => {
             <div className="video--board--content">
               <div className="visuals">{videoDetailsArr[videoIndex].video}</div>
               <div className="text">
-                <h3 style={{fontWeight:700, fontSize: "1.5rem"}}>{videoDetailsArr[videoIndex].title}</h3>
-                <p style={{fontWeight:600,fontSize:"18px"}}>{videoDetailsArr[videoIndex].description}</p>
+                <h3 style={{ fontWeight: 700, fontSize: "1.5rem" }}>
+                  {videoDetailsArr[videoIndex].title}
+                </h3>
+                <p style={{ fontWeight: 600, fontSize: "18px" }}>
+                  {videoDetailsArr[videoIndex].description}
+                </p>
               </div>
             </div>
           </div>
-        </div>
+        </Box>
       </div>
     </div>
   );
