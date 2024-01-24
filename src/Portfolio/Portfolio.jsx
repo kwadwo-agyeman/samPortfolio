@@ -20,7 +20,7 @@ const Portfolio = () => {
       ),
       title: "College Buddy",
       description:
-        "College Buddy is a college application assistance website, that solves the problem of most highschoolers inability to add images of their activities directly on majority college of college application websites or tools. With this tool, highschool students have the opportunity to combine text and visuals to properly communicate the activies they did in highschool;also, students have a enough character room to add an essay of each activities they did.",
+        "College Buddy is a college application assistance website, that solves the problem of most highschoolers inability to add images of their activities directly on majority of college application websites or tools. With this tool, highschool students have the opportunity to combine text and visuals to properly communicate the activities they did in highschool;also, students have a lot of character range to add an essay of each activity they did.",
     },
     {
       video: (
@@ -36,7 +36,7 @@ const Portfolio = () => {
       ),
       title: "Urban Cart",
       description:
-        " Urban Cart is a clothing Ecommerce store where all genders (kids inclusive) can get fashionable clothing that match their style. We deal heavily in perfumes, dior, gucci, le fleur, mizensir oud, just to name a few. Our webstore is sectioned properply to facilitate easy navigation of users on the platform: 'No Stress to Shop'.",
+        " Urban Cart is a clothing Ecommerce store where all genders (kids inclusive) can get fashionable clothing that match their style. The webstore is sectioned properply to facilitate easy navigation of users on the platform: 'No Stress to Shop'.",
     },
   ];
 
