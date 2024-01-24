@@ -105,15 +105,17 @@ video {
 }
 
 .nav-component {
-  position: absolute;
+  position: fixed;
   bottom: 45px;
   left: 20px;
+  z-index: 500;
 }
 
 .music-component {
-  position: absolute;
+  position: fixed;
   bottom: 52px;
   right: 20px;
+  z-index: 500;
 }
 
 .nav--pages {
