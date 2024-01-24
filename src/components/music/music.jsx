@@ -3,7 +3,7 @@ import homeMusicGif from "../../assets/musicGIF.gif";
 import PauseIcon from "@mui/icons-material/Pause";
 import PlayIcon from "@mui/icons-material/PlayArrow";
 // import musicGIF from "../../assets/bgSound.mp3";
-import music from "../../assets/portfolio-music.mP3"
+import music from "../../assets/portfolio-music.mp3"
 import "./music.css";
 import { Tooltip} from "@mui/material";
 const Music = () => {
