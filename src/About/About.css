@@ -147,7 +147,7 @@
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  background-color: rgb(255, 255, 255,.9);
+  background-color:  #b3b3f1;
   backdrop-filter: 8px;
   padding: 10px;
   border-radius: 8px;
