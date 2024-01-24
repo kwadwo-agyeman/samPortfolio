@@ -71,7 +71,7 @@
   }
   
   .about {
-    top: 50%;
+    top: 65%;
     right: 0;
     transform: translateY(-50%);
   }
@@ -81,7 +81,7 @@
 
   
   .portfolio {
-    top: 50%;
+    top: 65%;
     left: 0;
     transform: translateY(-50%);
   }

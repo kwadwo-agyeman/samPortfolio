@@ -6,7 +6,7 @@ import Nav from "./components/nav/nav";
 import Music from "./components/music/music";
 import Home from "./Home";
 import About from "./About/About";
-import Contact from "./Contact/Contact";
+// import Contact from "./Contact/Contact";
 import Portfolio from "./Portfolio/Portfolio";
 import { Box } from "@mui/material";
 
@@ -67,7 +67,8 @@ const App = () => {
         {activePage === "Home" && <Home />}
         {activePage === "About" && <About />}
         {activePage === "Portfolio" && <Portfolio />}
-        {activePage === "Contact" && <Contact />}
+        
+        {/* {activePage === "Contact" && <Contact />} */}
       </div>
     </Box>
   );

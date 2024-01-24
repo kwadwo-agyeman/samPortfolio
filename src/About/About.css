@@ -138,3 +138,13 @@
     filter: brightness(20deg);
   }
 }
+
+/******** CONTACT BOX ********/
+.contact--box{
+  color: purple;
+  margin-top: 2rem;
+}
+.contact--box a{
+  color: none;
+  cursor: pointer;
+}

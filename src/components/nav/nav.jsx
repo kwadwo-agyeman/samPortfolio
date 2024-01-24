@@ -29,11 +29,11 @@ const nav = (props) => {
           </Tooltip>
         </div>
 
-        <div className="contact">
+        {/* <div className="contact">
           <Tooltip title={"Contact Me"}>
             <ContactPhone onClick = {()=>props.onNavClick("Contact")} />
           </Tooltip>
-        </div>
+        </div> */}
       </div>
     </div>
   );
