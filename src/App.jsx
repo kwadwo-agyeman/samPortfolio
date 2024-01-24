@@ -6,7 +6,7 @@ import Nav from "./components/nav/nav";
 import Music from "./components/music/music";
 import Home from "./Home";
 import About from "./About/About";
-import Contact from "./Contact";
+import Contact from "./Contact/Contact";
 import Portfolio from "./Portfolio/Portfolio";
 import { Box } from "@mui/material";
 
@@ -34,7 +34,7 @@ const App = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsMoving(false);
-    }, 500); // Adjust the duration as needed
+    }, 500);
 
     return () => clearTimeout(timer);
   }, [cursorPosition]);
