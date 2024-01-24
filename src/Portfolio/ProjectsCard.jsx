@@ -56,7 +56,7 @@ const ProjectsCard = (props) => {
             </p>
             <p style={{ cursor: "pointer" }}>
               <Tooltip title="Github Repo">
-                <a href="https://github.com/kwadwo-agyeman/samPortfolio">
+                <a style={{textDecoration:"none",color:"white"}} href="https://github.com/kwadwo-agyeman/samPortfolio">
                   <GitHubIcon />
                 </a>
               </Tooltip>
