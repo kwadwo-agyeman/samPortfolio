@@ -141,7 +141,7 @@
 /******** CONTACT BOX ********/
 .contact--box{
   color: purple;
-  position: absolute;
+  position: fixed;
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
