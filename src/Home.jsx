@@ -22,7 +22,7 @@ const Home = () => {
                 SAMUEL AGYEMANG
               </text>
             </svg>
-            , BUT YOU CAN JUST CALL ME <span className="colored-2">SAM</span>
+            , BUT YOU CAN JUST CALL ME <span className="colored-2">KWADWO</span>
           </span>
 
           <span className="middle--home--text">
