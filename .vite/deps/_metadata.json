@@ -1,100 +1,112 @@
 {
-  "hash": "7c8bd404",
+  "hash": "a1c42a0f",
   "configHash": "3d4e9f10",
-  "lockfileHash": "7f6ab389",
-  "browserHash": "c30a7de2",
+  "lockfileHash": "1e8f1894",
+  "browserHash": "047c4f49",
   "optimized": {
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "f2e73df1",
+      "fileHash": "9efa2453",
       "needsInterop": true
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "3b7e2b2d",
+      "fileHash": "bfe92847",
       "needsInterop": true
     },
     "@mui/material": {
       "src": "../../node_modules/@mui/material/index.js",
       "file": "@mui_material.js",
-      "fileHash": "e7d8c664",
+      "fileHash": "f19a984f",
       "needsInterop": false
     },
     "@mui/icons-material/AccountCircleOutlined": {
       "src": "../../node_modules/@mui/icons-material/AccountCircleOutlined.js",
       "file": "@mui_icons-material_AccountCircleOutlined.js",
-      "fileHash": "20ba41bb",
+      "fileHash": "9d7d7a1e",
       "needsInterop": true
     },
     "@mui/icons-material/HomeOutlined": {
       "src": "../../node_modules/@mui/icons-material/HomeOutlined.js",
       "file": "@mui_icons-material_HomeOutlined.js",
-      "fileHash": "58ed1109",
+      "fileHash": "7e6f2453",
       "needsInterop": true
     },
     "@mui/icons-material/AlbumOutlined": {
       "src": "../../node_modules/@mui/icons-material/AlbumOutlined.js",
       "file": "@mui_icons-material_AlbumOutlined.js",
-      "fileHash": "2a90aefc",
+      "fileHash": "06b4bebb",
       "needsInterop": true
     },
     "@mui/icons-material/ContactPhoneOutlined": {
       "src": "../../node_modules/@mui/icons-material/ContactPhoneOutlined.js",
       "file": "@mui_icons-material_ContactPhoneOutlined.js",
-      "fileHash": "38f3c505",
+      "fileHash": "da827e24",
       "needsInterop": true
     },
     "@mui/icons-material/ArrowBackIos": {
       "src": "../../node_modules/@mui/icons-material/ArrowBackIos.js",
       "file": "@mui_icons-material_ArrowBackIos.js",
-      "fileHash": "6c8a100e",
+      "fileHash": "a76300ca",
       "needsInterop": true
     },
     "@mui/icons-material/Pause": {
       "src": "../../node_modules/@mui/icons-material/Pause.js",
       "file": "@mui_icons-material_Pause.js",
-      "fileHash": "4198fd3f",
+      "fileHash": "50bd3fa6",
       "needsInterop": true
     },
     "@mui/icons-material/PlayArrow": {
       "src": "../../node_modules/@mui/icons-material/PlayArrow.js",
       "file": "@mui_icons-material_PlayArrow.js",
-      "fileHash": "4b2f43fc",
+      "fileHash": "fdee0367",
       "needsInterop": true
     },
     "@mui/icons-material/ArrowForward": {
       "src": "../../node_modules/@mui/icons-material/ArrowForward.js",
       "file": "@mui_icons-material_ArrowForward.js",
-      "fileHash": "b731c35c",
+      "fileHash": "c1a33dad",
       "needsInterop": true
     },
     "@mui/icons-material/GitHub": {
       "src": "../../node_modules/@mui/icons-material/GitHub.js",
       "file": "@mui_icons-material_GitHub.js",
-      "fileHash": "3356d621",
+      "fileHash": "e0a079e5",
       "needsInterop": true
     },
     "@mui/system": {
       "src": "../../node_modules/@mui/system/esm/index.js",
       "file": "@mui_system.js",
-      "fileHash": "4c952a46",
+      "fileHash": "ab1fcc6f",
       "needsInterop": false
+    },
+    "@mui/icons-material/Email": {
+      "src": "../../node_modules/@mui/icons-material/Email.js",
+      "file": "@mui_icons-material_Email.js",
+      "fileHash": "cbf39530",
+      "needsInterop": true
+    },
+    "@mui/icons-material/LinkedIn": {
+      "src": "../../node_modules/@mui/icons-material/LinkedIn.js",
+      "file": "@mui_icons-material_LinkedIn.js",
+      "fileHash": "f48e2c9c",
+      "needsInterop": true
     }
   },
   "chunks": {
+    "chunk-WQZCBCJ5": {
+      "file": "chunk-WQZCBCJ5.js"
+    },
     "chunk-KJUJBIHA": {
       "file": "chunk-KJUJBIHA.js"
     },
-    "chunk-MXVAL4LA": {
-      "file": "chunk-MXVAL4LA.js"
+    "chunk-EGQWL4SM": {
+      "file": "chunk-EGQWL4SM.js"
     },
-    "chunk-RQKFMOQO": {
-      "file": "chunk-RQKFMOQO.js"
-    },
-    "chunk-ERU3JJ32": {
-      "file": "chunk-ERU3JJ32.js"
+    "chunk-2N5TLBZP": {
+      "file": "chunk-2N5TLBZP.js"
     },
     "chunk-W4VDMLRG": {
       "file": "chunk-W4VDMLRG.js"

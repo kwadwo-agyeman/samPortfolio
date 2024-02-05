@@ -27,20 +27,20 @@ const About = () => {
           <Skills />
         </Box>
 
-        <Others />
+        {/* <Others /> */}
 
         <Box className="contact--box" sx={{display:"flex",alignItems:"center",gap:"5rem",margin:"0 auto"}}>
           <a href="mailto:sam300kye@gmail.com">
             <EmailIcon />
           </a>
 
-          <a>
+          <a href="https://github.com/kwadwo-agyeman" target="_blank">
             <GitHubIcon />
           </a>
 
-          <a>
+          {/* <a>
             <LinkedInIcon/>
-          </a>
+          </a> */}
         </Box>
       </div>
     </div>

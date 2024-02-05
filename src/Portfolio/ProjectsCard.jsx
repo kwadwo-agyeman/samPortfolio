@@ -56,7 +56,7 @@ const ProjectsCard = (props) => {
             </p>
             <p style={{ cursor: "pointer" }}>
               <Tooltip title="Github Repo">
-                <a style={{textDecoration:"none",color:"white"}} href="https://github.com/kwadwo-agyeman/samPortfolio">
+                <a target="_blank" rel="noopener noreferrer" style={{textDecoration:"none",color:"white"}} href= {cardDetails.link}>
                   <GitHubIcon />
                 </a>
               </Tooltip>
@@ -75,12 +75,12 @@ const ProjectsCardArr = [
     img: collegeBudImg,
     title: "College Buddy",
     lang: " JS HTML CSS REACT MUI NODE.JS MONGO-DB EXPRESS.JS",
-    link:"https://github.com/kwadwo-agyeman/samPortfolio"
+    link:"https://github.com/kwadwo-agyeman/COLLEGEBUD"
   },
   {
     img: UrbanCart,
     title: "Urban Cart",
     lang: " JS HTML CSS REACT MUI ",
-    link:"https://github.com/kwadwo-agyeman/"
+    link:"https://github.com/kwadwo-agyeman/Ecommerce"
   },
 ];
